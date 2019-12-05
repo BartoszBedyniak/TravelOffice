@@ -1,9 +1,9 @@
 package pl.accenture;
 
 public class Date {
-    int year;
-    int day;
-    int month;
+    private int year;
+    private int day;
+    private int month;
     public Date(int year,int month, int day) {
         this.year = year;
         this.day = day;
@@ -21,7 +21,7 @@ public class Date {
     public int getMonth() {
         return month;
     }
-    public String getInfo()
+    public String toString()
     {
         return getYear()+"/"+getMonth()+"/"+getDay();
     }

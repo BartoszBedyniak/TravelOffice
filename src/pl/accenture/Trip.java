@@ -1,9 +1,10 @@
 package pl.accenture;
 
 public class Trip {
-    Date start;
-    Date end;
-    String description;
+    private Date start;
+    private Date end;
+    private String description;
+    double prince;
 
     public Trip(Date start,Date end,String description)
     {
@@ -11,8 +12,17 @@ public class Trip {
         this.end=end;
         this.description=description;
     }
-    String getInfo(){
 
-    return " Start: "+this.start.getInfo()+" Koniec: "+this.end.getInfo();
+    public double getPrince() {
+        return prince;
+    }
+
+    public void setPrince(double prince) {
+        this.prince = prince;
+    }
+
+    public String toString(){
+
+    return " Start: "+this.start.toString()+" Koniec: "+this.end.toString()+" Cena: "+getPrince();
     }
 }

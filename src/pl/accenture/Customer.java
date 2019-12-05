@@ -1,10 +1,13 @@
 package pl.accenture;
 
 public class Customer {
-    String name;
-    Adress adress;
-    Trip trip;
+    private String name;
+    private Adress adress;
+    private Trip trip;
 
+    public Trip getTrip() {
+        return trip;
+    }
 
     public Customer(String name)
     {
@@ -22,9 +25,9 @@ public class Customer {
     {
         this.trip=trip;
     }
-    public String getInfo()
+    public String toString()
     {
-        return this.name+" "+this.adress+" "+this.adress.getInfo()+" "+this.trip.getInfo();
+        return this.name+" "+this.adress+" "+this.adress.toString()+" "+this.trip.toString();
     }
 
 
